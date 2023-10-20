@@ -8,6 +8,14 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <limits.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+
+/* for buffers macros */
+#define WRITE_BUF_SIZE 1024
+#define READ_BUF_SIZE 1024
+#define BUF_FLUSH -1
 
 /*  string functions */
 int _strlen(char *s);
