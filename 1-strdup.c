@@ -4,7 +4,7 @@
  * @str: string
  * Return: pointer or NULL
  */
-char *_strdup(char *str)
+char *_strdup(const char *str)
 {
 char *s;
 unsigned int i, size = 0;
