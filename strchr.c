@@ -7,14 +7,10 @@
  */
 char *_strchr(char *s, char c)
 {
-int test = 0;
-for (; test == 0 && *s != '\0'; s++)
+while (*s++ != '\0')
 {
-if (*s == c)
-test = 1;
+	if (*s == c)
+			return (s);
 }
-if (test == 1)
-return (s - 1);
-else
-return ('\0');
+return (NULL);
 }
